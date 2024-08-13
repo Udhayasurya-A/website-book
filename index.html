@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="navbar">
+        <h1>BOOKSKY</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>The Night Circus</h2>
+            <h4> Erin Morgenstern</h4>
+            <p>This enchanting novel follows a magical competition between two young illusionists who create a fantastical circus that appears only at night. As the competition intensifies, so do their feelings for each other, leading to a mesmerizing and perilous love story.</p>
+            <button  onclick="deletebook(event)">Delete</button>
+        </div>
+        <div class="book-container">
+            <h2>Educated</h2>
+            <h4>Tara Westover </h4>
+            <p>A powerful memoir about Tara Westover's journey from growing up in a strict and abusive household in rural Idaho to earning a PhD from Cambridge University. Her story is a testament to the transformative power of education and personal resilience.</p>
+            <button  onclick="deletebook(event)">Delete</button>
+        </div>
+        <div class="book-container">
+            <h2>"The Goldfinch</h2>
+            <h4> Donna Tartt</h4>
+            <p>This Pulitzer Prize-winning novel tells the story of Theo Decker, a young boy whose life is turned upside down after a tragic terrorist attack at an art museum. The narrative weaves through themes of grief, art, and identity as Theo grows into adulthood.</p>
+            <button  onclick="deletebook(event)">Delete</button>
+        </div>
+        
+    </div>
+<div class="popup-overlay"></div>
+<div class="popup-box">
+    <h2>Add Booksky</h2>
+    <form>
+        <input type="text" placeholder="Book Tittle" id="book-tittle-input">
+        <input type="text" placeholder="Book Author" id="book-author-input">
+        <textarea placeholder="short Description" id="book-description-input"></textarea>
+        <button id="Add-book">Add</button>
+        <button id="cancel-popup">Cancel</button>
+    </form>
+</div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
